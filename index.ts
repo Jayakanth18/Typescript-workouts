@@ -11,4 +11,9 @@ const stringArray: string[] = ["milk", "bread", "cookies"];
 //tuple
 const userData: [string, number] = ["jayakanth", 22];
 //named tuple
-const userData2: [name: string, age:number] = ["hari", 24]
+const userData2: [name: string, age: number] = ["hari", 24];
+
+//functions
+const calculateAge = (birthYear: number): number => {
+  return new Date().getFullYear() - birthYear;
+};

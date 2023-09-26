@@ -1,8 +1,18 @@
-var myName = "Jayakanth";
+"use strict";
+const myName = "Jayakanth";
+//any
+let newData; //by default if the the variable is not initialized it asigned to any type.
 // number array
-var numArray = [1, 3, 5, 7, 9];
+const numArray = [1, 3, 5, 7, 9];
 //string array
-var stringArray = ["milk", "bread", "cookies"];
-//tuples
-var userData = ["jayakanth", 22];
-console.log(userData[0]);
+const stringArray = ["milk", "bread", "cookies"];
+//tuple
+const userData = ["jayakanth", 22];
+//named tuple
+const userData2 = ["hari", 24];
+//functions
+const calculateAge = (birthYear) => {
+    return new Date().getFullYear() - birthYear;
+};
+
+console.log(calculateAge(2001))
