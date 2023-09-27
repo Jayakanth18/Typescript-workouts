@@ -1,18 +1,34 @@
 "use strict";
 const myName = "Jayakanth";
-//any
-let newData; //by default if the the variable is not initialized it asigned to any type.
-// number array
+let newData;
 const numArray = [1, 3, 5, 7, 9];
-//string array
 const stringArray = ["milk", "bread", "cookies"];
-//tuple
+const numOrStringArray = [1, "two", 3, "four"];
 const userData = ["jayakanth", 22];
-//named tuple
 const userData2 = ["hari", 24];
-//functions
+let collections = 12;
+collections = "smart";
+collections = false;
 const calculateAge = (birthYear) => {
     return new Date().getFullYear() - birthYear;
 };
-
-console.log(calculateAge(2001))
+let user = {
+    name: "jk",
+    age: 22,
+    isAdmin: false,
+};
+let userObj;
+userObj = {
+    name: "arun",
+    age: 19,
+    isAdmin: true,
+};
+const betterFunction = (user) => {
+    return user.userName;
+};
+const jk = {
+    userName: "jk",
+    age: 22,
+    department: "cse",
+    isAdmin: false,
+};
